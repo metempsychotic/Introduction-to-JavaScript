@@ -202,13 +202,30 @@ console.log(grade(98));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+//couldn't really figure out a way to implement the .includes() method, but managed a working function anyway. :)
 
+function vowelCount(str){
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+
+  for (var i = 0; i < str.length; i++){
+    if(vowels.indexOf(str[i]) > -1){
+      count++;
+    }
+  }
+
+  return "This string contains " + count + " vowels.";
+}
+
+console.log(vowelCount("I wonder how many vowels are in this string..."));
 
 
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+
+
 
 
 
